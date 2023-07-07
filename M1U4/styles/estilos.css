@@ -1,0 +1,32 @@
+body {
+        padding-left: 11em;
+        font-family: Georgia, "Times New Roman",
+            Times, serif;
+        color: purple;
+        background-color: #d8da3d }
+
+  h1 {  font-family: Helvetica, Geneva, Arial,
+            SunSans-Regular, sans-serif; }
+
+  h3 {  color: rgb(72, 157, 231);}
+
+  li {  color: aliceblue;}
+
+  .a {  color: rgb(162, 23, 23);}
+
+form { 
+        font-family: Arial, Helvetica, sans-serif;
+        color: lightslategray;
+        background-color: #d8da3d ;
+        font-weight: bold;
+    }
+.inputOther{
+        margin-top: 20px;
+        color: rgb(234, 13, 219);
+        font-weight: bold;
+        
+}
+.marginTop50{
+        margin-top: 50px;
+}
+

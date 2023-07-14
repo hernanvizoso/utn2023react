@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../styles/estilos.css">
+</head>
+<body>
+<form action="" method="">
+    <p class="marginTop50">
+        <label for="nom">Nombre</label>
+        <input type="text" name="nombre" placeholder="nombre"/>
+    </p>
+    <p>
+        <label for="apell">Apellido</label>
+        <input type="text" name="apellido" placeholder="apellido"/>
+    </p>
+    <p>
+        <label for="sexo">Sexo</label>
+        <ul>
+            <li>
+                <input type="radio" name="sexo" value="hombre">
+                <label>Hombre</label>
+            </li>
+            <li>
+                <input type="radio" name="sexo" value="mujer">
+                <label>Mujer</label>
+            </li>
+        </ul>
+    </p>
+    <label>Hobbies</label>
+    <ul>
+        <li>
+            <input type="checkbox" name="hobbies[]" value="bailar" id="bailar">
+            <label for="bailar" >Bailar</label>
+        </li>
+        <li>
+            <input type="checkbox" name="hobbies[]" value="cantar" id="cantar">
+            <label for="cantar" >Cantar</label>
+        </li>
+        <li>
+            <input type="checkbox" name="hobbies[]" value="nadar" id="nadar">
+            <label for="nadar" >Nadar</label>
+        </li>
+        <li>
+            <input type="checkbox" name="hobbies[]" value="correr" id="correr">
+            <label for="correr" >Correr</label>
+        </li>
+    </ul>
+    <p>
+        <label for="titulo">Titulo</label>
+        <select name="titulo">
+            <option value="primario">Primario</option>
+            <option value="secundario">Secundario</option>
+            <option value="terciario">Terciario</option>
+            <option value="universitario">Universitario</option>
+        </select>
+    </p>
+    <p>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+
+    </p>
+    <p>
+        <p><label for="comentarios">Comentarios:</label></p>
+        <textarea name="comentarios" rows="4" cols="50"></textarea>
+        <br class="marginTop10" >
+        <input class="inputOther" type="submit" value="enviar">
+        <input type="reset" value="Borrar">
+    </p>
+</form>
+    
+</body>
+</html>

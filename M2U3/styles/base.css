@@ -1,0 +1,76 @@
+body {
+    /* padding-left: 11em; */
+    font-family: Georgia, "Times New Roman",
+        Times, serif;
+    color: black;
+    background-color: black 
+}
+
+h1 {width: 100%;  
+    color: black; 
+    display: inline-block;
+
+}
+
+nav{
+    text-align: center;
+    display:inline-block;
+}
+nav ul{
+    list-style: none;
+    
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.principal{
+    background-color: #8fa68e;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.contenedor {
+    background-color: #8fa68e;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    transition: all 0.4s ease;
+}
+
+.contenido {
+    background: rgb(192, 83, 4);
+    width: 20%;
+}
+
+.contenido2 {
+    background: white;
+    width: 40%;
+}
+
+.contenido3 {
+    background: grey;
+    width: 20%;
+}
+
+.contenido:hover{
+    animation-name: Anima3;
+    animation-duration: 5s;
+}
+
+.contenido2:hover {
+    box-shadow:  0 0 0 10PX darkslategray;
+    text-transform: uppercase;
+}
+
+.contenido3:hover{
+    border-radius: 10%;
+}
+
+@keyframes Anima3{
+    from {background-color: gray;
+          font-family:'Times New Roman', Times, serif ;}
+    to{ background-color: darkgreen;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+}

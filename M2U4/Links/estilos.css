@@ -1,0 +1,66 @@
+.resaltar-nav:hover {
+    color: chartreuse;
+}
+
+.paddingBoth20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.paddingTop50 {
+    padding-top: 50px;
+}
+
+.contentFirst::before {
+    content: "Un lugar paradisiaco de bosque de pinos, montañas y rio.";
+}
+
+.contentSecond::before {
+    content: "Un atardecer maravilloso donde el sol se oculta en el mar.";
+}
+
+.content3::before {
+    content: "Un lugar especial para hacer turismo aventura.";
+}
+
+.content4::before {
+    content: "La imponente imagen de la ciudad en la noche.";
+}
+
+.textoVerTarjeta::before {
+    content: "Ver tarjeta";
+}
+
+label.form-label {
+    font-style: italic;
+    font-weight: bold;
+    color: yellow;
+}
+
+h2.fw-bold.fst-italic {
+    padding-left: 50px;
+}
+
+.fadein img {
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+.fadein img:hover {
+    opacity: 1;
+    transition: 1s ease;
+}
+
+.color img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: 1s ease;
+}
+
+.color img:hover {
+    filter: grayscale(0%);
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    filter: none;
+    transition: 1s ease;
+}

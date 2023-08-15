@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostrapt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Links/estilos.css">
+</head>
+
+<body>
+    <!-- aca esta el nav -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand active; resaltar-nav" href="#">Mi sitio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active; resaltar-nav" aria-current="page" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown navbar-dark bg-dark">
+                        <a class="nav-link resaltar-nav dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu navbar-dark ">
+                            <li><a class="dropdown-item" href="#masValorados">Mas valorados</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#masElegidos">Mas elegidos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#masInhospitos">Mas inhospitos</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active; resaltar-nav" href="#contacto">Contacto</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- aca esta el carousel -->
+    <div id="home" class="paddingBoth20"></div>
+    <div class="paddingBoth20"></div>
+    <div class="container text-center">
+        <div class="row justify-content-md-center">
+            <div class="col"></div>
+            <div class="col-9">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100"
+                                alt="Paraiso">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Paraiso primaveral </h5>
+                                <p class="contentFirst"></p>
+                                <p class="btn btn-sm btn-warning "><a role="button" href="#card1"
+                                        style="text-decoration: none;">Ver tarjeta</a></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/slides/039.webp" class="d-block w-100"
+                                alt="Atardecer en el mar">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Atardecer en el mar</h5>
+                                <p class="contentSecond"></p>
+                                <p class="btn btn-sm btn-danger"><a role="button" href="#card2"
+                                        style="text-decoration: none;">Ver tarjeta</a></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/slides/029.webp" class="d-block w-100"
+                                alt="Bosque otoñal">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Bosque otoñal</h5>
+                                <p class="content3"></p>
+                                <p class="btn btn-sm btn-success"><a role="button" href="#card3"
+                                        style="text-decoration: none;">Ver tarjeta</a></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://mdbcdn.b-cdn.net/img/new/slides/052.webp" class="d-block w-100"
+                                alt="Luces de ciudad">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Luces de ciudad</h5>
+                                <p class="content4"></p>
+                                <p class="btn btn-sm btn-outline-warning "><a role="button" href="#card4"
+                                        style="text-decoration: none;">Ver tarjeta</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Proximo</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <!-- fin carousel -->
+
+    <div class="paddingBoth20"></div>
+    <!-- inicio grid cards -->
+
+    <div class="p-3 m-0 border-0 bd-example">
+        <div class="row row-cols-1 row-cols-md-3 g-6">
+            <div id="card1" class="col">
+                <div class="card h-100">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="card-img-top" alt="Paraiso">
+                    <div class="card-body">
+                        <h5 class="card-title">Paraiso primaveral</h5>
+                        <p class="card-text contentFirst"><br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Provident, aliquid ducimus excepturi quas magnam numquam quis nulla nisi, sit tempora autem
+                            quia rem possimus fuga labore pariatur in? Excepturi, qui.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="card2" class="col">
+                <div class="card h-100">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/039.webp" class="card-img-top" alt="Atardecer">
+                    <div class="card-body">
+                        <h5 class="card-title ">Atardecer en el mar</h5>
+                        <p class="card-text contentSecond"><br>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Laudantium, iusto repellendus. Cumque perferendis, impedit eos nobis quasi neque,
+                            perspiciatis alias dolorum at quidem iste repudiandae quibusdam temporibus nisi, corporis
+                            nam?</p>
+                    </div>
+                </div>
+            </div>
+            <div id="card3" class="col">
+                <div class="card h-100">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/029.webp" class="card-img-top" alt="Bosque">
+                    <div class="card-body">
+                        <h5 class="card-title">Bosque otoñal</h5>
+                        <p class="card-text content3"><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Assumenda nulla quaerat dolor distinctio ullam vel totam voluptate molestias velit ea
+                            nostrum quod quae accusantium, sapiente repellat facere, ad fuga voluptatibus.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="card4" class="col color">
+                <div class="card h-100">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/052.webp" class="card-img-top" alt="Ciudad">
+                    <div class="card-body">
+                        <h5 class="card-title">Luces de ciudad</h5>
+                        <p class="card-text content4"><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Accusamus dicta quaerat sed veritatis velit ullam, ad, aliquid aliquam architecto rerum hic
+                            repellendus doloribus voluptatum at excepturi ratione odio facere exercitationem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col fadein">
+                <div class="card h-100">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/005.webp" class="card-img-top" alt="Cielo">
+                    <div class="card-body">
+                        <h5 class="card-title">Cielo Artico</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, nihil
+                            labore. Expedita, consequatur exercitationem? Non recusandae est optio delectus, magni
+                            pariatur. Eligendi est animi accusamus, voluptas totam quisquam optio rem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/038.webp" class="card-img-top"
+                        alt="Bosque nevado">
+                    <div class="card-body">
+                        <h5 class="card-title">Bosque nevado</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum adipisci culpa
+                            eius quod numquam minus, eligendi sapiente quae? Quis voluptates nostrum tempore dolorum
+                            assumenda veritatis consectetur deserunt, nihil mollitia beatae!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin grid cards -->
+
+    <!-- inicio accordion -->
+    <div class="p-3 m-0 border-0 bd-example">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div id="masElegidos" class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Los sitios mas elegidos
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <div class="row row-cols-1 row-cols-md-2 g-2">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="card-img-top"
+                                        alt="Paraiso">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Paraiso primaveral</h5>
+                                        <p class="card-text contentFirst"><br>Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit.
+                                            Provident, aliquid ducimus excepturi quas magnam numquam quis nulla nisi,
+                                            sit tempora autem
+                                            quia rem possimus fuga labore pariatur in? Excepturi, qui.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/039.webp" class="card-img-top"
+                                        alt="Atardecer">
+                                    <div class="card-body">
+                                        <h5 class="card-title ">Atardecer en el mar</h5>
+                                        <p class="card-text contentSecond"><br>Lorem, ipsum dolor sit amet consectetur
+                                            adipisicing elit.
+                                            Laudantium, iusto repellendus. Cumque perferendis, impedit eos nobis quasi
+                                            neque,
+                                            perspiciatis alias dolorum at quidem iste repudiandae quibusdam temporibus
+                                            nisi, corporis
+                                            nam?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="masValorados" class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Los sitios mas valorados
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="row row-cols-1 row-cols-md-2 g-2">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/029.webp" class="card-img-top"
+                                        alt="Bosque">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bosque otoñal</h5>
+                                        <p class="card-text content3"><br> Lorem ipsum dolor sit amet, consectetur
+                                            adipisicing elit.
+                                            Assumenda nulla quaerat dolor distinctio ullam vel totam voluptate molestias
+                                            velit ea
+                                            nostrum quod quae accusantium, sapiente repellat facere, ad fuga
+                                            voluptatibus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/052.webp" class="card-img-top"
+                                        alt="Ciudad">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Luces de ciudad</h5>
+                                        <p class="card-text content4"><br>Lorem ipsum dolor sit amet, consectetur
+                                            adipisicing elit.
+                                            Accusamus dicta quaerat sed veritatis velit ullam, ad, aliquid aliquam
+                                            architecto rerum hic
+                                            repellendus doloribus voluptatum at excepturi ratione odio facere
+                                            exercitationem.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="masInhospitos" class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Los lugares mas inhospitos
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <div class="row row-cols-1 row-cols-md-2 g-2">
+                            <div class="col">
+                                <div class="card">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/005.webp" class="card-img-top"
+                                        alt="Cielo">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cielo Artico</h5>
+                                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                            Tempore, nihil
+                                            labore. Expedita, consequatur exercitationem? Non recusandae est optio
+                                            delectus, magni
+                                            pariatur. Eligendi est animi accusamus, voluptas totam quisquam optio rem.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img src="https://mdbcdn.b-cdn.net/img/new/slides/038.webp" class="card-img-top"
+                                        alt="Bosque nevado">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bosque nevado</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Cum adipisci culpa
+                                            eius quod numquam minus, eligendi sapiente quae? Quis voluptates nostrum
+                                            tempore dolorum
+                                            assumenda veritatis consectetur deserunt, nihil mollitia beatae!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin accordion -->
+
+    <!-- inicio Contacto -->
+    <div id="contacto" class="paddingBoth20"></div>
+    <h2 class="fw-bold fst-italic">Complete el siguiente formulario:</h2>
+    <div class="p-3 m-0 border-0 bd-example">
+        <div class="container ">
+            <div class="row justify-content-md-center">
+                <div class="col"></div>
+                <div class="col-9 bg-info">
+
+                    <form class="row g-3">
+                        <div class="col-md-6 shadow-lg">
+                            <label for="inputNombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="inputNombre">
+                        </div>
+                        <div class="col-md-6 shadow-lg">
+                            <label for="inputApellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="inputApellido">
+                        </div>
+                        <div class="col-md-6 shadow-lg">
+                            <label for="inputTelefono" class="form-label">Telefono</label>
+                            <input type="tel" class="form-control" id="inputTelefono">
+                        </div>
+                        <div class="col-md-6 shadow-lg">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6 shadow-lg">
+                            <label for="inputUsername" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="inputUsername">
+                        </div>
+                        <div class="col-md-6 shadow-lg">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12 shadow-lg">
+                            <label for="inputAddress" class="form-label">Direccion</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Av. Belgrano 1234">
+                        </div>
+                        <div class="col-md-6 shadow-lg">
+                            <label for="inputCity" class="form-label">Ciudad</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4 shadow-lg">
+                            <label for="inputState" class="form-label">Provincia</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Elija Provincia...</option>
+                                <option value="BuenosAires">Buenos Aires</option>
+                                <option value="Cordoba">Cordoba</option>
+                                <option value="SantaFe">Santa Fe</option>
+                                <option value="CABA">CABA</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 shadow-lg">
+                            <label for="inputZip" class="form-label">Codigo Postal</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check shadow-lg">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Deseo recibir notificaciones
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 shadow-lg">
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+        <!-- fin contacto  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

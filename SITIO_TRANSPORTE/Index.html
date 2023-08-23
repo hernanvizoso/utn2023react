@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/proyecto.css">
+</head>
+
+<body>
+    <header>
+        <div class="holder">
+            <img src="./images/logo.png" width="110" alt="Transportes X">
+            <h1>Transportes X</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="holder">
+            <!-- <ul class="menu" > -->
+            <li><a class="activo" href="index.html">Home</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="servicios.html">Servicios </a></li>
+            <li><a href="construyendo.html">Galeria</a></li>
+            <li><a href="construyendo.html">Novedades</a></li>
+            <li><a href="construyendo.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- inicio carousel -->
+    <main class="holder">
+        <div class="container text-center">
+            <div class="row justify-content-md-center">
+                <div class="col"></div>
+                <div class="homeImg">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/home/img01.jpg" class="d-block w-100" alt="Nosotros">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="fontCarOrange">Equipo de trabajo</h5>
+                                    <p class="contentFirst fontCarBlack"></p>
+                                    <p class="btn btn-sm btn-warning "><a role="button" href="nosotros.html"
+                                            style="text-decoration: none;">Nosotros</a></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/home/img02.jpg" class="d-block w-100" alt="Servicios">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="fontCarYellow">Nuestros servicios</h5>
+                                    <p class="contentSecond fontCarWhite"></p>
+                                    <p class="btn btn-sm btn-danger"><a role="button" href="servicios.html"
+                                            style="text-decoration: none;">Servicios</a></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/home/img03.jpg" class="d-block w-100" alt="Galeria">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="fontCarYellow">Galeria de fotos</h5>
+                                    <p class="content3 fontCarRed"></p>
+                                    <p class="btn btn-sm btn-danger"><a role="button" href="construyendo.html"
+                                            style="text-decoration: none;">Galeria</a></p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/home/img04.jpg" class="d-block w-100" alt="Novedades">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="fontCarBlack">Nuestras Novedades</h5>
+                                    <p class="content4 fontCarBlack"></p>
+                                    <p class="btn btn-sm btn-outline-warning"><a role="button" href="construyendo.html"
+                                            style="text-decoration: none;">Novedades</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Proximo</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+
+        <!-- fin carousel -->
+
+        <div class="columnas">
+            <section class="bienvenidos">
+                <h2>Bienvenidos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eaque laudantium, cum blanditiis
+                    repellendus accusamus veniam placeat velit, voluptates provident esse inventore! Pariatur nisi
+                    blanditiis natus eaque illo voluptatibus quas?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, exercitationem porro. Tenetur,
+                    dolores natus eaque magnam illo excepturi suscipit facilis, quos unde maxime cupiditate ex aut
+                    veniam aperiam odit voluptate.
+
+                </p>
+            </section>
+            <section class="testimoniosSection">
+                <h2>Testimonios</h2>
+                <div class="testimonios">
+                    <span class="cita">Simplemente Excelente</span>
+                    <span class="autor">Juan Gomez - Zapatos.com</span>
+                </div>
+            </section>
+        </div>
+
+
+    </main>
+
+
+    <footer>
+        <p>Diseñado por Hernan Vizoso - &copy; 2023</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

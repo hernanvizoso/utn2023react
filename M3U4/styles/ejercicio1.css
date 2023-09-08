@@ -1,0 +1,32 @@
+div {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cuadrado {
+    width: 100px;
+    height: 100px;
+}
+
+#rojo {
+    background: red;
+    border: 1px solid black;
+}
+
+#azul {
+    background: blue;
+    border: 1px solid black;
+}
+
+#verde {
+    background: green;
+    border: 1px solid black;
+}

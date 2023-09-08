@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="./styles/ejercicio1.css">
+</head>
+
+<body class="contenedor" id="principal">
+    <div id="rojo"></div>
+    <div id="azul"></div>
+    <div id="verde"></div>
+
+
+    <script>
+        const colorRojo = document.getElementById('rojo');
+        const colorAzul = document.getElementById('azul');
+        const colorVerde = document.getElementById('verde');
+
+        colorAzul.addEventListener('click', function () {
+            principal.style.backgroundColor = 'blue';
+        });
+        colorRojo.addEventListener('click', function () {
+            principal.style.backgroundColor = 'red';
+        });
+        colorVerde.addEventListener('click', function () {
+            principal.style.backgroundColor = 'green';
+        });
+        console.log(colorRojo);
+        console.log(colorAzul);
+        console.log(colorVerde);
+
+    </script>
+</body>
+
+</html>

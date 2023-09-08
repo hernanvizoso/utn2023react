@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="./styles/ejercicio3.css">
+</head>
+
+<body>
+    <h1>Ejercicio 3: Alumnos aprobados</h1>
+    <h2> Lista de todas las notas.</h2>
+    <!-- <div class="titulo">
+        <p>Nombre</p>
+        <p>Nota</p>
+    </div>
+    <div>
+        <p>Juan Gomez</p>
+        <p>7</p>
+    </div> -->
+
+    <script>
+
+        var alumnos = [{
+            nombre: 'Juan Gomez',
+            nota: 7
+        }, {
+            nombre: 'Pedro Rodriguez',
+            nota: 4
+        }, {
+            nombre: 'Roxana García',
+            nota: 8
+        }, {
+            nombre: 'Luciano Lopez',
+            nota: 5
+        }, {
+            nombre: 'Fernanda Gimenez',
+            nota: 6
+        }, {
+            nombre: 'Florencia Martinez',
+            nota: 10
+        }, {
+            nombre: 'Raul Sanchez',
+            nota: 7
+        }, {
+            nombre: 'Sandra Figueroa',
+            nota: 8
+        }];
+
+        const tituloNombre = "Nombre y Apellido";
+        const tituloNota = "Nota";
+
+        var resultadoExamen = [];
+
+        agregarTitulo(tituloNombre, tituloNota, 1);
+        for (let j = 0; j < alumnos.length; j++) {
+
+            agregarTitulo(alumnos[j].nombre.toString(), alumnos[j].nota.toString(), 0);
+        }
+
+        const listadoAprobados = "Lista de alumnos aprobados"
+        const h2Element = document.createElement('h2');
+        h2Element.innerText = listadoAprobados;
+        document.body.appendChild(h2Element);
+
+        agregarTitulo(tituloNombre, tituloNota, 1);
+        var aprobados = [];
+        for (let i = 0; i < alumnos.length; i++) {
+            if (alumnos[i].nota >= 7) {
+                aprobados.push(alumnos[i]);
+                agregarTitulo(alumnos[i].nombre.toString(), alumnos[i].nota.toString(), 0);
+            }
+        }
+        console.log(aprobados);
+
+        function agregarTitulo(a, b, isTitulo) {
+
+            const divTitulo = document.createElement('div');
+            const pNombre = document.createElement('p');
+            pNombre.innerText = a.toString();
+            divTitulo.appendChild(pNombre);
+
+            const pNota = document.createElement('p');
+            pNota.innerText = b.toString();
+            divTitulo.appendChild(pNota);
+            if (isTitulo == 1) {
+                divTitulo.classList.add('titulo');
+            }
+
+            document.body.appendChild(divTitulo);
+        }
+
+    </script>
+</body>
+
+</html>

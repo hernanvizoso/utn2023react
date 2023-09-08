@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2: contador de caracteres</title>
+    <link rel="stylesheet" href="./styles/ejercicio2.css">
+</head>
+
+<body>
+    <h1>Contador de caracteres</h1>
+    <div>
+        <textarea id="miTextarea" cols="50" rows="20" onkeyup="sumar()"></textarea>
+    </div>
+    <div class="contenedor">
+        <p> total caracteres: </p>
+        <p id="total">0</p>
+    </div>
+    <script>
+        function sumar() {
+            const mensaje = document.getElementById('miTextarea');
+            const suma = document.getElementById('total');
+            var length = mensaje.value.length;
+            suma.innerHTML = length;
+        }
+    </script>
+</body>
+
+</html>

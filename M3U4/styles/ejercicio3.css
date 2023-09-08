@@ -1,0 +1,26 @@
+div {
+    width: 50%;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+div.titulo {
+    background-color: greenyellow;
+    font-weight: bold;
+}
+
+div p {
+    width: 50%;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid black;
+    margin-block: 0px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

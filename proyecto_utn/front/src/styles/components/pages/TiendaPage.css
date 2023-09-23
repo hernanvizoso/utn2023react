@@ -1,0 +1,78 @@
+
+
+/* inicio tienda */
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url('../../../../public/images/home/logoClothes.png');
+    background-position-x: center;
+    background-repeat: repeat-y;
+    background-color: #314c1b;
+}
+src\styles\components\pages\TiendaPage.css
+.galeria img {
+    width: 18%;
+    border: 1px solid #ddd;
+    padding: 0.3em;
+    box-sizing: border-box;
+    box-shadow: 5px 10px #888888;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+/* fin galeria */
+/* inicio galeria */
+
+.galeria2 {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.galeria2Item {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding-left: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+.galeria2Item div {
+    width: 50%;
+}
+
+.galeria2Item a {
+    font-size: 20px;
+    color: #dc7703;
+    text-decoration: none;
+}
+
+.galeria2Item i {
+    color: #dc7703;
+    padding-right: 10px;
+}
+
+.galeria2Item p {
+    font: 22px;
+    color: white;
+}
+
+.galeria2 img {
+    width: 35%;
+    border: 1px solid #ddd;
+    padding: 0.3em;
+    box-sizing: border-box;
+    box-shadow: 5px 10px #888888;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+
+/* fin galeria */

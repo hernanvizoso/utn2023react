@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import './App.css';
 
 import Header from "./components/layout/Header";
 import Nav from "./components/layout/Nav";
@@ -14,11 +15,11 @@ import TiendaPage from "./pages/TiendaPage";
 import ConstruyendoPage from "./pages/ConstruyendoPage";
 
 
-//  import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
+    <div className="App fondoBody">
       <Header />
       <BrowserRouter>
         <Nav />

@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom";
+import '../styles/components/pages/ConstruyendoPage.css'
 
 const ConstruyendoPage = (props)=>{
     return (
@@ -26,9 +27,7 @@ const ConstruyendoPage = (props)=>{
                 <p>Lorem ipsum, dolor sit amet consectetur</p>
             </div>
             <div className="mainConstructionItem; divBoton">
-                 {/* <!-- div boton --> */}
-                {/* <a class="aboton" href="./Index.html">Inicio</a> */}
-                <Link to="/">Inicio</Link>
+                <Link className="aboton" to="/">Inicio</Link>
             </div>
         </div>
 

@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel-item h5 {
+    color: white;
+    font-family: wfont_ea7e5d_6a0e3a2821df4187bd07550e513e3375, wf_6a0e3a2821df4187bd07550e5, orig_albra_black;
+    font-size: 60px;
+    letter-spacing: 0em;
+    font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.carousel-item p {
+    color: white;
+    font-family: wfont_ea7e5d_6a0e3a2821df4187bd07550e513e3375, wf_6a0e3a2821df4187bd07550e5, orig_albra_black;
+    font-size: 20px;
+    letter-spacing: 0em;
+    font-weight: bold;
+    color: #dc7703;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fontCarYellow {
+    color: #dc7703;
+    /* font-weight: bold; */
+    /* font-family:dinneuzeitgroteskltw01-_812426,sans-serif; 
+    font-size:35px; 
+    letter-spacing:0em; */
+    font-family: wfont_ea7e5d_6a0e3a2821df4187bd07550e513e3375, wf_6a0e3a2821df4187bd07550e5, orig_albra_black;
+    font-size: 60px;
+    letter-spacing: 0em;
+    font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.fontCarBlack {
+    color: rgb(6, 6, 5);
+    font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .carousel-item .h */
+
+.fontCarBlue {
+    color: blue;
+    font-weight: bold;
 }
+
+.fontCarOrange {
+    color: orangered;
+    font-weight: bold;
+}
+
+.fontCarRed {
+    color: red;
+    font-weight: bold;
+}
+
+.contentFirst::before {
+    content: "Nuestro equipo de trabajo es fundamental.";
+    /* background-color: #6da9ed; */
+}
+
+.contentSecond::before {
+    content: "Tratamos de brindar un mejor servicio cada dia.";
+}
+
+.content3::before {
+    content: "Conoce por dentro nuestras instalaciones.";
+}
+
+.content4::before {
+    content: "Enterate de las ultimas novedades para vos.";
+}
+
+/* fin bootstrap */
+
+
+
+/* inicio novedades */
+div.novedades {
+    border: 3px solid grey;
+    border-style: groove;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+}
+
+/* fin novedades */
+
+/* 
+inicio nuevo */
+
+
+.fondo {
+    background-image: url("../public/images/home/logoClothes.png ");
+    /*, url("catfront.png");*/
+    background-repeat: no-repeat;
+    /* background-color: brown; */
+    /* background-color: #dc7703; */
+    /* background-color: rgb(165, 42, 2); */
+    /*esta ok*/
+
+    /* background-color: #dbcfb2; */
+    background-color: #314c1b;
+
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+.usedColors {
+    background-color: brown;
+    background-color: #dc7703;
+    background-color: rgb(165, 42, 2);
+    /*esta ok*/
+
+    background-color: #dbcfb2;
+    background-color: #314c1b;
+}
+
+.fondoBody {
+    /* background-image: url("../public/images/home/logoClothes.png");                        */
+    background-repeat: repeat-y;
+    background-color: #314c1b;
+}
+
+
+

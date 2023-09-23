@@ -1,0 +1,63 @@
+/* inicio nosotros */
+
+.historia p {
+    font-size: 12px;
+}
+
+.staff {
+    width: auto;
+}
+
+.personaMain {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personaItem {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+    color: white;
+    /* color: #dc7703; */
+}
+
+.personaItem img {
+    border-radius: 50%;
+    max-width: 70%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: 1s ease;
+}
+
+.personaItem h4 {
+    font-weight: bold;
+    padding: 0;
+}
+
+/* .personaItem h5 {
+    color: white;
+}
+.personaItem h6{
+    color: white;
+} */
+.personaItem p {
+    color: whitesmoke;
+}
+
+.personaItem div:hover {
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+    transition: 1s ease;
+    font-weight: bold;
+    color: #dc7703;
+    /* color: white; */
+}
+
+.container2 {
+    text-align: center;
+}
+
+/* fin nosotros */

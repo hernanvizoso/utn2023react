@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom";
+import '../styles/components/pages/ContactoPage.css'
+
 const ContactoPage = (props) => {
     return (
         <main className="holder contacto fondo">
@@ -7,19 +9,19 @@ const ContactoPage = (props) => {
                 <h2>Contacto Rapido</h2>
                 <form action="" method="" className="formulario">
                     <p>
-                        <label for="nombre">Nombre</label>
+                        <label htmlFor="nombre">Nombre</label>
                         <input type="text" name="" id="" placeholder="Ingrese su nombre" />
                     </p>
                     <p>
-                        <label for="email">Email</label>
+                        <label htmlFor="email">Email</label>
                         <input type="email" name="" id="" placeholder="Ingrese su mail" />
                     </p>
                     <p>
-                        <label for="telefono">Telefono</label>
+                        <label htmlFor="telefono">Telefono</label>
                         <input type="tel" name="" id="" placeholder="Ingrese su telefono" />
                     </p>
                     <p>
-                        <label for="mensaje">Mensaje</label>
+                        <label htmlFor="mensaje">Mensaje</label>
                         <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
                     </p>
                     <p>
@@ -30,14 +32,16 @@ const ContactoPage = (props) => {
             <div className="datos">
                 <h2>Otras vias de comunicacion</h2>
                 <ul>
-                    <li><i className="fa-solid fa-phone-volume fa-lg"></i>
+                <li><i className="fa-solid fa-phone-volume fa-lg"></i>
                         {/* <a href="">4324-2388</a> */}
                         <Link to="">4324-2388</Link>
                     </li>
-                    <li><i className="fa-sharp fa-solid fa-envelope fa-lg"></i>
+                    <li>
+                       <i className="fa-sharp fa-solid fa-envelope fa-lg"></i>
                         <Link to='javascript:void(0)' onClick={() => window.location = 'mailito:Clothes&shoes@gmail.com'}> Email</Link>
                     </li>
-                    <li><i className="fa-brands fa-square-instagram fa-lg"></i>
+                    <li>
+                        <i className="fa-brands fa-square-instagram fa-lg"></i>
                         <Link target={"_blank"} to="https://www.instagram.com/Clothes&shoes/">Instagram</Link>
                     </li>
                     <li><i className="fa-brands fa-twitter fa-lg"></i>

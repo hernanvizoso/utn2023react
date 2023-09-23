@@ -1,0 +1,78 @@
+/*#region home inicio */
+h2 {
+    color: white;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.homeImg {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.bienvenidos {
+    width: 100%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.bienvenidos h2 {
+    margin-top: 30px;
+}
+
+.bienvenidos p {
+    font-size: 20px;
+}
+
+.testimoniosSection {
+    width: 40%;
+}
+
+.testimoniosSection h2{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.testimonios {
+    background-color:transparent;
+    color: #dc7703;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.testimonios .cita {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    display: block;
+}
+
+.testimonios .autor {
+    font-size: 14px;
+    text-align: left;
+    display: block;
+    margin: 12px 0;
+}
+
+.columnas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@keyframes blinking {
+    0% {
+        color: #dc7703;
+    }
+    100% {
+      color: white;
+    }
+  }
+  .blink {
+    animation: blinking 1s infinite;
+  }
+
+/* fin home  */

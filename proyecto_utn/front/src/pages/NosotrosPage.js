@@ -1,8 +1,9 @@
 import React from "react";
+import '../styles/components/pages/NosotrosPage.css'
 
 const NosotrosPage = (props) => {
     return (
-        <main className="holder">
+        <main className="holder fondo">
 
         <div>
             <h2>Historia</h2>
@@ -31,7 +32,7 @@ const NosotrosPage = (props) => {
                         consequuntur incidunt hic!</p>
                 </div>
                 <div className="personaItem">
-                    <div class="container2">
+                    <div className="container2">
                         <img src="./images/nosotros/nosotros2.jpg" alt="Diana Reyes"/>
                         <div>
                             <h5>Diana Reyes</h5>

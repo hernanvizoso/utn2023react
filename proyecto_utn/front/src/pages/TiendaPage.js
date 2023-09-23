@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import '../styles/components/pages/TiendaPage.css'
 
 const TiendaPage = (props)=>{
     return (
 
-        <main className="holder">
+        <main className="holder fondo">
 
         <h2>Tienda online</h2>
         <div className="galeria2">
@@ -81,7 +82,7 @@ const TiendaPage = (props)=>{
                     <h2>Producto</h2>
                     <hr/>
                     <p>precio: $7000</p>
-                    <i class="fa-solid fa-cart-shopping"></i><Link to="/construyendo">comprar</Link>
+                    <i className="fa-solid fa-cart-shopping"></i><Link to="/construyendo">comprar</Link>
                 </div>
             </div>
             <div className="galeria2Item">
@@ -111,7 +112,7 @@ const TiendaPage = (props)=>{
                     <h2>Producto</h2>
                     <hr/>
                     <p>precio: $7000</p>
-                    <i class="fa-solid fa-cart-shopping"></i><Link to="/construyendo">comprar</Link>
+                    <i className="fa-solid fa-cart-shopping"></i><Link to="/construyendo">comprar</Link>
                 </div>
             </div>
 

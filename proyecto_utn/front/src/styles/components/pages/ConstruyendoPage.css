@@ -1,0 +1,99 @@
+/* inicio construccion */
+.divTop {
+    background-color: rgba(255, 202, 88, 255);
+    display: block;
+    height: 20px;
+    width: 870px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.mainBody {
+    background-color: rgba(50, 49, 57, 255);
+    margin: 0;
+}
+
+.mainDiv {
+    max-width: 870px;
+    margin-left: 200px;
+    align-items: center;
+}
+
+.mainConstruccion {
+    background-color: rgba(83, 82, 88, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    border-radius: 10px;
+
+}
+
+.bodiConstructionItem {
+    background-color: rgba(83, 82, 88, 255);
+    width: 800px;
+    flex-wrap: wrap;
+}
+
+
+.red {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(83, 82, 88, 255);
+    width: 800px;
+    height: 0;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.red1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.red2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(255, 202, 88, 255);
+    text-transform: uppercase;
+    float: left;
+}
+
+.footerConstruction {
+    background-color: rgba(50, 49, 57, 255);
+    clear: both;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+}
+
+.divBoton {
+    font-size: auto;
+    font-weight: bold;
+    background-color: rgba(255, 202, 88, 255);
+    padding: 10px 30px 10px 30px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.leyend1 {
+    color: white;
+}
+
+.aboton {
+
+    font-size: large;
+    color: rgba(83, 82, 88, 255);
+    text-decoration: none;
+
+}
+
+/* fin construccion */

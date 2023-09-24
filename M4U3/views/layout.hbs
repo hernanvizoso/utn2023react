@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <nav>
+    <p>Este NAV devuelve paginas de rutas simples</p>
+    <li><a href="/test">Test</a></li>
+    <li><a href="/futbol">futbol</a></li>
+    <li><a href="/noticias">noticias</a></li>
+  </nav>
+
+  <hr>
+
+    <nav>
+    <p>Este NAV devuelve paginas con manejador de ruta</p>
+    <li><a href="/testManejador">Test con controlador</a></li>
+    <li><a href="/futbolManejador">futbol con controlador</a></li>
+    <li><a href="/noticiasManejador">noticias con controlador</a></li>
+  </nav>
+
+  <hr>
+    <nav>
+    <p>Este NAV devuelve paginas con Render</p>
+    <li><a href="/testRender">Test con Render</a></li>
+    <li><a href="/futbolRender">futbol con Render</a></li>
+    <li><a href="/noticiasRender">noticias con Render</a></li>
+  </nav>
+
+  <hr>
+  {{{body}}}
+</body>
+
+</html>

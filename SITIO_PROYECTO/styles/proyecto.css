@@ -60,6 +60,29 @@ footer {
     margin-top: 20px;
 }
 
+.footerDivImg{
+    background-color:#dc7703;
+}
+
+.footerDivImg2{
+    background-color: #314c1b;
+}
+.footer3 {
+    background-color: #b05420;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    color:#dc7703;
+}
+.footer4{
+    background-color: transparent;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    color:white; 
+    border: 3px solid #ccc;
+}
+
 nav ul li a.activo {
     /* background-color: #4c76a5; */
     background-color: #dc7703;
@@ -88,7 +111,7 @@ h2 {
 }
 
 .bienvenidos h2 {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .bienvenidos p {
@@ -185,12 +208,6 @@ h2 {
     padding: 0;
 }
 
-/* .personaItem h5 {
-    color: white;
-}
-.personaItem h6{
-    color: white;
-} */
 .personaItem p {
     color: whitesmoke;
 }
@@ -377,10 +394,6 @@ h2 {
 
 .fontCarYellow {
     color: #dc7703;
-    /* font-weight: bold; */
-    /* font-family:dinneuzeitgroteskltw01-_812426,sans-serif; 
-    font-size:35px; 
-    letter-spacing:0em; */
     font-family: wfont_ea7e5d_6a0e3a2821df4187bd07550e513e3375, wf_6a0e3a2821df4187bd07550e5, orig_albra_black;
     font-size: 60px;
     letter-spacing: 0em;
@@ -446,6 +459,7 @@ h2 {
 }
 
 /* fin bootstrap */
+
 /* inicio galeria */
 
 .galeria {
@@ -576,28 +590,20 @@ div.novedades {
 .datos ul li a {
     font-size: 14px;
     color: white;
-    /* #dc7703; */
     text-decoration: none;
-    /* font-weight: bold; */
 }
 
 /* fin contacto */
-/* 
-inicio nuevo */
+
+/* inicio nuevo */
 
 
 .fondo {
     background-image: url("../images/home/logoClothes.png ");
-    /*, url("catfront.png");*/
     background-repeat: no-repeat;
-    /* background-color: brown; */
-    /* background-color: #dc7703; */
-    /* background-color: rgb(165, 42, 2); */
     /*esta ok*/
 
-    /* background-color: #dbcfb2; */
     background-color: #314c1b;
-
     width: 100%;
     height: 100%;
     background-position: center;
@@ -614,7 +620,6 @@ inicio nuevo */
 }
 
 .fondoBody {
-    /* background-image: url("../images/home/logoClotheslarge.png"); */
     background-repeat: repeat-y;
     background-color: #314c1b;
 }

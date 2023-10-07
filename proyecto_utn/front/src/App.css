@@ -22,10 +22,6 @@
 
 .fontCarYellow {
     color: #dc7703;
-    /* font-weight: bold; */
-    /* font-family:dinneuzeitgroteskltw01-_812426,sans-serif; 
-    font-size:35px; 
-    letter-spacing:0em; */
     font-family: wfont_ea7e5d_6a0e3a2821df4187bd07550e513e3375, wf_6a0e3a2821df4187bd07550e5, orig_albra_black;
     font-size: 60px;
     letter-spacing: 0em;
@@ -93,16 +89,10 @@ inicio nuevo */
 
 .fondo {
     background-image: url("../public/images/home/logoClothes.png ");
-    /*, url("catfront.png");*/
     background-repeat: no-repeat;
-    /* background-color: brown; */
-    /* background-color: #dc7703; */
-    /* background-color: rgb(165, 42, 2); */
     /*esta ok*/
 
-    /* background-color: #dbcfb2; */
     background-color: #314c1b;
-
     width: 100%;
     height: 100%;
     background-position: center;
@@ -119,7 +109,6 @@ inicio nuevo */
 }
 
 .fondoBody {
-    /* background-image: url("../public/images/home/logoClothes.png");                        */
     background-repeat: repeat-y;
     background-color: #314c1b;
 }

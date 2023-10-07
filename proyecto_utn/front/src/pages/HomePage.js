@@ -99,14 +99,133 @@ const HomePage = (props) => {
                     </p>
                 </section>
                 <section className="bienvenidos">
-                    <h2>Historia</h2>
+                    {/* <h2>Historia</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eaque laudantium, cum blanditiis
                         repellendus accusamus veniam placeat velit, voluptates provident esse inventore! Pariatur nisi
                         blanditiis natus eaque illo voluptatibus quas?</p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, exercitationem porro. Tenetur,
                         dolores natus eaque magnam illo excepturi suscipit facilis, quos unde maxime cupiditate ex aut
                         veniam aperiam odit voluptate.
-                    </p>
+                    </p> */}
+
+<h2>Sucursales</h2>
+
+{/* inicio accordion   */}
+
+<div className="p-4 m-0 border-0 bd-example">
+    <div className="accordion accordion-flush" id="accordionFlushExample">
+        <div id="zonaSur" className="accordion-item" style={{backgroundColor: 'transparent'}} >
+            <h2 className="accordion-header" id="flush-headingOne">
+                <button className="accordion-button collapsed footer4" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                    aria-controls="flush-collapseOne" style={{backgroundColor: 'transparent'}}>
+                    Zona Sur
+                </button>
+            </h2>
+            <div id="flush-collapseOne" className="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div className="accordion-body">
+
+                    <div className="row row-cols-1 row-cols-md-2 g-2">
+                        <div className="col">
+                            <div className="card h-100">
+                                <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp"
+                                    className="card-img-top" alt="San Martin de los Andes"></img>
+                                <div className="card-body">
+                                    <h5 className="card-title">San Martin de los Andes</h5>
+                                    <p className="card-text">Horario de atencion: 10 a 17hs</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card h-100">
+                                <img src="https://mdbcdn.b-cdn.net/img/new/slides/039.webp"
+                                    className="card-img-top" alt="Pinamar"></img>
+                                <div className="card-body">
+                                    <h5 className="card-title ">Pinamar</h5>
+                                    <p className="card-text">Horario de atencion: 10 a 22hs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="zonaOesteYCABA" className="accordion-item" style={{backgroundColor: 'transparent'}}>
+            <h2 className="accordion-header" id="flush-headingTwo">
+                <button className="accordion-button collapsed footer4" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                    aria-controls="flush-collapseTwo" style={{backgroundColor: 'transparent'}}>
+                    Zona Oeste y CABA
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" className="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div className="accordion-body">
+                    <div className="row row-cols-1 row-cols-md-2 g-2">
+                        <div className="col">
+                            <div className="card h-100">
+                                <img src="https://mdbcdn.b-cdn.net/img/new/slides/029.webp"
+                                    className="card-img-top" alt="Sierra de Cordoba"></img>
+                                <div className="card-body">
+                                    <h5 className="card-title">Sierra de Cordoba</h5>
+                                    <p className="card-text">Horario de Atencion: 10 a 18hs</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card h-100">
+                                <img src="https://mdbcdn.b-cdn.net/img/new/slides/052.webp"
+                                    className="card-img-top" alt="CABA"></img>
+                                <div className="card-body">
+                                    <h5 className="card-title">Ciudad de Bs. As.</h5>
+                                    <p className="card-text">Horario de atencion: 10 a 21 hs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="zonaNorte" className="accordion-item" style={{backgroundColor: 'transparent'}}>
+            <h2 className="accordion-header" id="flush-headingThree">
+                <button className="accordion-button collapsed footer4" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                    aria-expanded="false" aria-controls="flush-collapseThree"
+                    style={{backgroundColor: 'transparent'}}>
+                    Zona Norte
+                </button>
+            </h2>
+            <div id="flush-collapseThree" className="accordion-collapse collapse"
+                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div className="accordion-body">
+                    <div className="row row-cols-1 row-cols-md-2 g-2">
+                        <div className="col">
+                            <div className="card">
+                                <img src="https://mdbcdn.b-cdn.net/img/new/slides/005.webp"
+                                    className="card-img-top" alt="Salta"></img>
+                                <div className="card-body">
+                                    <h5 className="card-title">Salta</h5>
+                                    <p className="card-text">Horario de atencion: 10 a 18 hs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card">
+                                <img src="https://mdbcdn.b-cdn.net/img/new/slides/038.webp"
+                                    className="card-img-top" alt="Mendoza"></img>
+                                <div className="card-body">
+                                    <h5 className="card-title">Mendoza</h5>
+                                    <p className="card-text">Horario de atencion: 10 a 19 hs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
                 </section>
                 <section className="testimoniosSection">
                     <h2>Testimonios</h2>

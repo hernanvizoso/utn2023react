@@ -77,5 +77,32 @@ inicio nuevo */
   background-repeat: repeat-y;
   background-color: #314c1b;
 }
+.login{
+  margin-top: 40px;
+  margin-left: 250px;
+  display: inline-flex;
+  align-items: stretch;
+  width: 660px;
+  font-family: 'ravie' ;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: space-around; 
+  flex-direction: column;
 
+}
+.login input{
+  margin-left: 30px;
+  border: 2px solid #dc7703;
+  font-family: 'Times New Roman', Times, serif 
+}
+
+.login button{
+  width: 25%;
+  background:#dc7703;
+   margin-left: -20px; 
+}
+
+.someText{
+  font-family: 'ravie' ;
+}
 

@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 
-/bin
+#/bin se agrega carpeta bin para que otro usuario pueda levantar ok
 # testing
 /coverage
 

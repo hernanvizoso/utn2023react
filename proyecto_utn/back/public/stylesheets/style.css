@@ -104,5 +104,37 @@ inicio nuevo */
 
 .someText{
   font-family: 'ravie' ;
+  margin-top: 20px;
 }
 
+.contenedor{
+  width: 95%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.row {
+  margin-top: 10px;
+   margin-right: 20px;
+   margin-left: 20px;
+  }
+
+  .agregar h4{
+    font-family: 'ravie' ;
+    margin-bottom: 20px;
+    margin-top:20px;
+  }
+  .agregar button{
+    width: 25%;
+    background:#dc7703;
+     margin-left: 20px; 
+     margin-top: 10px;
+  }
+
+  .agregar p{
+    margin-left: 20px;
+    margin-top:15px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif 
+  }

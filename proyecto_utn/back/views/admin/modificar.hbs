@@ -1,0 +1,27 @@
+<div class="contenedor agregar">
+    <div class="row">
+        <div class="col-6 offset-3" >
+            <h4 class="row">Modificar una nueva novedad</h4>
+            <form action="/admin/novedades/modificar" method="post">
+            <input type="hidden" value="{{novedades.id}}" name="id">
+            <div class="mb3 row">
+                    <input type="text" class="form-control" placeholder="Titulo" name="titulo"
+                     value="{{novedades.titulo}}">
+            </div>
+            <div class="mb3 row">
+                    <textarea type="text" class="form-control" placeholder="Subtitulo" 
+                    name="subtitulo" >{{novedades.subtitulo}}</textarea>
+                   
+            </div>
+            <div class="mb3 row">
+                    <textarea type="text" class="form-control" placeholder="Cuerpo" 
+                    name="cuerpo" >{{novedades.cuerpo}}</textarea>
+            </div>
+            <button type="submit" class="btn btn-primary agregar">Modificar</button>
+            </form>
+            {{#if error}}
+                <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

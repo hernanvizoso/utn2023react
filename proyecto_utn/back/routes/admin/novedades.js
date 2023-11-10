@@ -21,7 +21,7 @@ router.get('/agregar', function (req, res, next) {
 });
 
 
-router.post('/agregar',  async (req, res, next) => {
+router.post('/agregar', async (req, res, next) => {
 
     try {
         if (req.body.titulo != "" && req.body.subtitulo != "" && req.body.cuerpo != "") {
@@ -45,6 +45,46 @@ router.post('/agregar',  async (req, res, next) => {
         })
     }
 })
+
+router.get('/eliminar/:id', async (req, res, next) => {
+    var id = req.params.id;
+    await novedadesModel.deleteNovedadesById(id);
+    res.redirect('/admin/novedades');
+});
+
+
+// para que me traiga el diseño con una sola novedad cargada buscando por ID para poder modificarla
+router.get('/modificar/:id', async(req, res, next)=>{
+    var id = req.params.id;
+    console.log(id);
+    var novedades = await novedadesModel.getNovedadesById(id);
+    res.render('admin/modificar', {
+        layout: 'admin/layout',
+        novedades
+    })
+});
+
+router.post('/modificar', async(req, res, next)=>{
+try {
+    var id = req.body.id;
+    var obj = {
+        titulo : req.body.titulo,
+        subtitulo : req.body.subtitulo,
+        cuerpo : req.body.cuerpo
+    } 
+    console.log(obj);
+    await novedadesModel.modificarNovedadesById(obj,id);
+    res.redirect('/admin/novedades');
+    
+} catch (error) {
+    console.log(error);
+    res.render('admin/modificar',{
+        layout : 'admin/layout',
+        error: true,
+        message : 'No se pudo modificar la novedad.'
+    })
+}
+});
 
 
 module.exports = router;

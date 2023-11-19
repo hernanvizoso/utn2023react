@@ -37,7 +37,6 @@ const Footer = (props) => {
                     </div>
                 </div>
             </div>
-
             <p className='margin480'>Diseñado por Hernan Vizoso - &copy; 2023</p>
         </footer>
 

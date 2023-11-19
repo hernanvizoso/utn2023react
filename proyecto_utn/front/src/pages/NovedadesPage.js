@@ -1,44 +1,46 @@
-const NovedadesPage = (props)=>{
-    return (
-        <main className="holder fondo">
+import React, { useState, useEffect } from "react";
+import  axios from 'axios';
+import  NovedadItem  from '../components/novedades/NovedadItem';
+
+const  NovedadesPage = (props) => {
+    const [loading, setLoading] = useState(false);
+    const [novedades, setNovedades] = useState([]);
+    useEffect(() => {
+        const cargarNovedades = async() => {
+            setLoading(true);
+
+            // url en archivo
+            // const response = await axios.get (`${process.env.
+            //REACT_APP_API_URL}/api/novedades`);
+            //
+            const response = await axios.get ('http://localhost:3000/api/novedades');
+            setNovedades (response.data);
+            setLoading(false);
+        };
+
+        cargarNovedades();
+
+    }, []);
+
+    return(
+        <section className="holder fondo">
         <h2>Novedades</h2>
-        <div className="novedades">
-            <h3>Titulo</h3>
-            <hr/>
-            <h4>Subtitulo</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ipsa, quidem animi dolor pariatur, dolores
-                provident
-                architecto deserunt quod exercitationem sed, doloribus minima porro. Illum, aspernatur. Provident ipsam
-                aperiam blanditiis.</p>
-        </div>
-        <div className="novedades">
-            <h3>Titulo</h3>
-            <hr/>
-            <h4>Subtitulo</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ipsa, quidem animi dolor pariatur, dolores
-                provident
-                architecto deserunt quod exercitationem sed, doloribus minima porro. Illum, aspernatur. Provident ipsam
-                aperiam blanditiis.</p>
-        </div>
-        <div className="novedades">
-            <h3>Titulo</h3>
-            <hr/>
-            <h4>Subtitulo</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ipsa, quidem animi dolor pariatur, dolores
-                provident
-                architecto deserunt quod exercitationem sed, doloribus minima porro. Illum, aspernatur. Provident ipsam
-                aperiam blanditiis.</p>
-        </div>
-        <div className="novedades">
-            <h3>Titulo</h3>
-            <hr/>
-            <h4>Subtitulo</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ipsa, quidem animi dolor pariatur, dolores
-                provident
-                architecto deserunt quod exercitationem sed, doloribus minima porro. Illum, aspernatur. Provident ipsam
-                aperiam blanditiis.</p>
-        </div>
-    </main>
-    );
-}
+        {
+            loading ? (
+            <p> Cargando...</p>
+            ) 
+            : (
+                novedades.map(item => <NovedadItem 
+                    key = {item.id}
+                    title = {item.titulo}
+                    subtitle = {item.subtitulo}
+                    imagen = {item.imagen} 
+                    body = {item.cuerpo} />)
+                )
+        }
+        </section>
+    )
+};
+
 export default NovedadesPage;
+

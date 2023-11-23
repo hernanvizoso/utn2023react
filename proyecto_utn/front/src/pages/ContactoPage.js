@@ -1,29 +1,70 @@
-import React from "react"
+import React, {useState} from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import '../styles/components/pages/ContactoPage.css'
 
 const ContactoPage = (props) => {
+    
+    const initialForm = {
+        nombre: '',
+        email: '',
+        telefono: '',
+        mensaje: ''
+    }
+
+    const [sending, setSending] = useState(false);
+    const [msg, setMsg] = useState('');
+    const [formdata, setFormdata] = useState(initialForm);
+
+    const handleChange = e =>{
+        const {name, value} = e.target;
+        setFormdata(oldData => ({
+            ...oldData,
+            [name]: value
+        }));
+    } 
+
+    const handleSubmit = async e => {
+        e.preventDefault();
+        setMsg('');
+        setSending(true);
+
+        const response = await
+        axios.post('http://localhost:3000/api/contacto', formdata);
+        setSending(false);
+        setMsg(response.data.message);
+        if (response.data.error===false) {
+            setFormdata(initialForm);
+        };
+    }
+    
     return (
         <main className="holder contacto fondo">
             <div>
                 <h2>Contacto Rapido</h2>
-                <form action="" method="" className="formulario">
+                <form action="" method="" className="formulario" onSubmit={handleSubmit}>
                     <p>
                         <label htmlFor="nombre">Nombre</label>
-                        <input type="text" name="" id="" placeholder="Ingrese su nombre" />
+                        <input type="text" name="nombre" id="" placeholder="Ingrese su nombre" 
+                        value={formdata.nombre} onChange={handleChange}/>
                     </p>
                     <p>
                         <label htmlFor="email">Email</label>
-                        <input type="email" name="" id="" placeholder="Ingrese su mail" />
+                        <input type="email" name="email" id="" placeholder="Ingrese su mail" 
+                        value={formdata.email} onChange={handleChange}/>
                     </p>
                     <p>
                         <label htmlFor="telefono">Telefono</label>
-                        <input type="tel" name="" id="" placeholder="Ingrese su telefono" />
+                        <input type="tel" name="telefono" id="" placeholder="Ingrese su telefono"
+                        value={formdata.telefono} onChange={handleChange} />
                     </p>
                     <p>
                         <label htmlFor="mensaje">Mensaje</label>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese su mensaje"></textarea>
+                        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Ingrese su mensaje"
+                        value={formdata.mensaje} onChange={handleChange}></textarea>
                     </p>
+                    {sending? <p className="mailStatus">Enviando</p> : null}
+                    {msg ? <p className="mailStatus">{msg}</p> : null}
                     <p>
                         <input type="submit" value="Enviar" />
                     </p>
